@@ -8,16 +8,15 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
   
   
   export default function Solemnes() {
-    const [Controles, setControles] = React.useState(null);
+    const [Solemnes, setSolemnes] = React.useState(null);
   
     React.useEffect(() => {
       axios.get(baseURL).then((response) => {
-        setControles(response.data);
+        setSolemnes(response.data);
       });
     }, []);
   
-    if (!Controles) return null;
-  
+    if (!Solemnes)
     return (
       <Evaluacion
         nombreCarrera="Plan común"
@@ -26,7 +25,19 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
         enlaceRamo="ayg"
         tipoEvaluacion="Solemnes"
         enlaceEvaluacion="solemnes"
-        Files={Controles}
+        Files={null}
       />
     );
+
+  return (
+    <Evaluacion
+      nombreCarrera="Plan común"
+      enlaceCarrera="plan-comun"
+      nombreRamo="Álgebra y geometría"
+      enlaceRamo="ayg"
+      tipoEvaluacion="Solemnes"
+      enlaceEvaluacion="Solemnes"
+      Files={Solemnes}
+    />
+  );
   }

@@ -45,13 +45,13 @@ export default function Home() {
                     href="/eit"
                     className="bg-white text-red-500 rounded-lg p-8"
                   >
-                    INGENIRÍA CIVIL INFORMÁTICA Y TELECOMUNICACIONES
+                    INGENIERÍA CIVIL INFORMÁTICA Y TELECOMUNICACIONES
                   </Link>
                   <Link
                     href="/eoc"
                     className="bg-white text-red-500 rounded-lg p-8"
                   >
-                    INGENIRÍA CIVIL EN OBRAS CIVILES
+                    INGENIERÍA CIVIL EN OBRAS CIVILES
                   </Link>
                 </div>
               </div>

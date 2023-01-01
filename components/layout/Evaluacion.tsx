@@ -26,11 +26,11 @@ export default function evaluacion(props: any) {
           />
 
           <div className="grid grid-cols-3 gap-4 mt-4">
-            {Object.keys(props.Files).map((key: any) => {
+            {Object.keys(props.Files || {}).map((key: any) => {
               return (
                 <>
                   <div className="bg-white p-4 rounded">
-                    <Link href={props.Files[key].enlace} className="hover:text-red-500 ">
+                    <Link href={props.Files[key].enlace} className="hover:text-red-500 " target="_blank">
                       <div className="flex">
                         <div className="mr-3">
                           <svg
