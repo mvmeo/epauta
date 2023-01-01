@@ -51,8 +51,6 @@ export default function Ayg() {
       enlaceCarrera="plan-comun"
       nombreRamo="Álgebra y geometría"
       enlaceRamo="ayg"
-      tipoEvaluacion="Controles"
-      enlaceEvaluacion="controles"
       Controles={Controles}
       Solemnes={Solemnes}
       Examenes={Examenes}
