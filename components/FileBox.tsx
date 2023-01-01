@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import FileList from "./FileList";
 
@@ -9,12 +10,12 @@ const FileBox = (props: any) => {
       </div>
       <FileList Files={props.Files}/>
       <div className="bg-gray-300 mt-10">
-        <a
-          href={`/${props.carrera}/${props.ramo}/${props.evaluacion}`} target="_blank"
+        <Link
+          href={`/${props.carrera}/${props.ramo}/${props.evaluacion}`}
           className=" p-4 pl-8 hover:text-red-500 absolute bottom-0 right-0"
         >
           Ver más...
-        </a>
+        </Link>
       </div>
     </div>
   );

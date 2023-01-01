@@ -30,7 +30,7 @@ export default function evaluacion(props: any) {
               return (
                 <>
                   <div className="bg-white p-4 rounded">
-                    <Link href={props.Files[key].enlace} className="hover:text-red-500 " target="_blank">
+                    <Link href={props.Files[key].enlace} className="hover:text-red-500 " target="_blank" rel="noopener">
                       <div className="flex">
                         <div className="mr-3">
                           <svg
