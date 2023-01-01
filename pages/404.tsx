@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -24,9 +25,9 @@ export default function NotFound() {
                     <h3 className="">Página no encontrada</h3>
                   </div>
                   <div>
-                    <a href="/" className="text-red-500 bg-white p-4 rounded">
+                    <Link href="/" className="text-red-500 bg-white p-4 rounded">
                       Volver al inicio.
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
