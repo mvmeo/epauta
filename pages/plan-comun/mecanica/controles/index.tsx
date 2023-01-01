@@ -7,7 +7,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
   
   
   
-  export default function controles() {
+  export default function   Controles() {
     const [Controles, setControles] = React.useState(null);
   
     React.useEffect(() => {

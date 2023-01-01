@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb";
 import Footer from "../Footer";
 
@@ -29,7 +30,7 @@ export default function evaluacion(props: any) {
               return (
                 <>
                   <div className="bg-white p-4 rounded">
-                    <a href={props.Files[key].enlace} className="hover:text-red-500 ">
+                    <Link href={props.Files[key].enlace} className="hover:text-red-500 ">
                       <div className="flex">
                         <div className="mr-3">
                           <svg
@@ -57,7 +58,7 @@ export default function evaluacion(props: any) {
                             props.Files[key].semestre}
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </>
               );

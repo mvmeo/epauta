@@ -4,7 +4,7 @@ import React from "react";
 
 const baseURL = "https://mvmeo.github.io/apipautas/carreras/eii/malla.json"
 
-export default function PlanComun() {
+export default function Eii() {
   const [malla, setMalla] = React.useState(null);
 
   React.useEffect(() => {

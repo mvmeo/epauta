@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Breadcrumb from "../Breadcrumb";
 import Footer from "../Footer";
 import RamoBox from "../RamoBox";
@@ -18,11 +19,11 @@ export default function Carrera(props: any) {
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
             {Object.keys(props.Malla || {}).map((key: any) => {
               return (
-                <a
+                <Link
                   href={props.enlaceCarrera}
                 >
                   <div className="bg-white px-4 py-8 rounded hover:text-red-500">{props.Malla[key].nombre}</div>
-                </a>
+                </Link>
               );
             })}
           </div>

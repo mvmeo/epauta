@@ -7,7 +7,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
   
   
   
-  export default function solemnes() {
+  export default function Solemnes() {
     const [Solemnes, setSolemnes] = React.useState(null);
   
     React.useEffect(() => {

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -27,31 +28,31 @@ export default function Home() {
 
             <div className="container mx-auto">
               <div className="grid md:grid-cols-5 m-4 gap-4 text-white font-bold">
-                <a
+                <Link
                   href="/plan-comun"
                   className="bg-white text-red-500 rounded-lg p-8"
                 >
                   PLAN COMÚN
-                </a>
+                </Link>
                 <div className="md:col-span-4 grid grid-cols-1 gap-4">
-                  <a
+                  <Link
                     href="/eii"
                     className="bg-white text-red-500 rounded-lg p-8"
                   >
                     INGENIERÍA CIVIL INDUSTRIAL
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/eit"
                     className="bg-white text-red-500 rounded-lg p-8"
                   >
                     INGENIRÍA CIVIL INFORMÁTICA Y TELECOMUNICACIONES
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/eoc"
                     className="bg-white text-red-500 rounded-lg p-8"
                   >
                     INGENIRÍA CIVIL EN OBRAS CIVILES
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
   
   
   
-  export default function examenes() {
+  export default function Examenes() {
     const [Examenes, setExamenes] = React.useState(null);
   
     React.useEffect(() => {

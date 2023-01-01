@@ -7,7 +7,7 @@ const baseURL = "https://mvmeo.github.io/apipautas/carreras/plan-comun/progra-av
 
 
 
-export default function solemnes() {
+export default function Solemnes() {
   const [Solemnes, setSolemnes] = React.useState(null);
 
   React.useEffect(() => {
