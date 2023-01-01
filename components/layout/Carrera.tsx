@@ -19,7 +19,7 @@ export default function Carrera(props: any) {
             {Object.keys(props.Malla || {}).map((key: any) => {
               return (
                 <a
-                  href={props.enlaceCarrera + "/" + props.Malla[key].enlace}
+                  href={props.enlaceCarrera}
                 >
                   <div className="bg-white px-4 py-8 rounded hover:text-red-500">{props.Malla[key].nombre}</div>
                 </a>
