@@ -15,19 +15,6 @@ export default function Examenes() {
     });
   }, []);
 
-  if (!Examenes)
-    return (
-      <Evaluacion
-        nombreCarrera="Plan común"
-        enlaceCarrera="plan-comun"
-        nombreRamo="Álgebra y geometría"
-        enlaceRamo="ayg"
-        tipoEvaluacion="Controles"
-        enlaceEvaluacion="controles"
-        Files={null}
-      />
-    );
-
   return (
     <Evaluacion
       nombreCarrera="Plan común"
@@ -36,7 +23,7 @@ export default function Examenes() {
       enlaceRamo="ayg"
       tipoEvaluacion="Examenes"
       enlaceEvaluacion="examenes"
-      Files={Examenes   }
+      Files={Examenes}
     />
   );
 }

@@ -15,19 +15,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
         setSolemnes(response.data);
       });
     }, []);
-  
-    if (!Solemnes)
-    return (
-      <Evaluacion
-        nombreCarrera="Plan común"
-        enlaceCarrera="plan-comun"
-        nombreRamo="Álgebra y geometría"
-        enlaceRamo="ayg"
-        tipoEvaluacion="Solemnes"
-        enlaceEvaluacion="solemnes"
-        Files={null}
-      />
-    );
+ 
 
   return (
     <Evaluacion

@@ -15,9 +15,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
         setSolemnes(response.data);
       });
     }, []);
-  
-    if (!Solemnes) return null;
-  
+ 
     return (
       <Evaluacion
         nombreCarrera="Plan común"

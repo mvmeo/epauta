@@ -16,8 +16,6 @@ export default function Solemnes() {
     });
   }, []);
 
-  if (!Solemnes) return null;
-
   return (
     <Evaluacion
       nombreCarrera="Plan común"

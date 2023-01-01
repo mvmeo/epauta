@@ -15,9 +15,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
         setControles(response.data);
       });
     }, []);
-  
-    if (!Controles) return null;
-  
+ 
     return (
       <Evaluacion
         nombreCarrera="Plan común"

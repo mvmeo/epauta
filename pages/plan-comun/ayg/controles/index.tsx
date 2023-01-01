@@ -15,19 +15,6 @@ export default function Controles() {
     });
   }, []);
 
-  if (!Controles)
-    return (
-      <Evaluacion
-        nombreCarrera="Plan común"
-        enlaceCarrera="plan-comun"
-        nombreRamo="Álgebra y geometría"
-        enlaceRamo="ayg"
-        tipoEvaluacion="Controles"
-        enlaceEvaluacion="controles"
-        Files={null}
-      />
-    );
-
   return (
     <Evaluacion
       nombreCarrera="Plan común"

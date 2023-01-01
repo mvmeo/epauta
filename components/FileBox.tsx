@@ -10,7 +10,7 @@ const FileBox = (props: any) => {
       <FileList Files={props.Files}/>
       <div className="bg-gray-300 mt-10">
         <a
-          href={`/${props.carrera}/${props.ramo}/${props.evaluacion}`}
+          href={`/${props.carrera}/${props.ramo}/${props.evaluacion}`} target="_blank"
           className=" p-4 pl-8 hover:text-red-500 absolute bottom-0 right-0"
         >
           Ver más...
