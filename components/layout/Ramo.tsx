@@ -25,7 +25,7 @@ export default function Ramo(props:any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-red-500 md:h-screen h-full">
+      <main className="">
         <div className="container mx-auto">
           <Breadcrumb carrera={props.nombreCarrera} enlaceCarrera={props.enlaceCarrera} ramo={props.nombreRamo} enlaceRamo={props.enlaceRamo} evaluacion={props.tipoEvaluacion}/>
 

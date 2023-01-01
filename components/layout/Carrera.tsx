@@ -12,11 +12,11 @@ export default function Carrera(props: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-red-500 md:h-screen h-full">
+      <main className="">
         <div className="container mx-auto">
           <Breadcrumb carrera={props.nombreCarrera} enlaceCarrera={props.enlaceCarrera}/>
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
-            {Object.keys(props.Malla).map((key: any) => {
+            {Object.keys(props.Malla || {}).map((key: any) => {
               return (
                 <a
                   href={props.enlaceCarrera + "/" + props.Malla[key].enlace}

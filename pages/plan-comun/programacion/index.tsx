@@ -11,8 +11,6 @@ const solemnesURL =
 const examenesURL =
   "https://mvmeo.github.io/apipautas/carreras/plan-comun/programacion/examenes.json";
 
-
-
 export default function Programacion() {
   const [solemnes, setSolemnes] = React.useState(null);
   const [examenes, setExamenes] = React.useState(null);
@@ -22,6 +20,7 @@ export default function Programacion() {
     axios.get(controlesURL).then((response) => {
       setControles(response.data);
     });
+
     axios.get(solemnesURL).then((response) => {
       setSolemnes(response.data);
     });
@@ -30,41 +29,44 @@ export default function Programacion() {
     });
   }, []);
 
-  if (!solemnes) return (
-    <Ramo
-      nombreCarrera="Plan común"
-      enlaceCarrera="plan-comun"
-      nombreRamo="Programación"
-      enlaceRamo="programacion"
-      Controles={controles}
-      Solemnes={null}
-      Examenes={examenes}
-    />
-  )
+  if (!solemnes)
+    return (
+      <Ramo
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Programación"
+        enlaceRamo="programacion"
+        Controles={controles}
+        Solemnes={null}
+        Examenes={examenes}
+      />
+    );
 
-  if (!examenes) return (
-    <Ramo
-      nombreCarrera="Plan común"
-      enlaceCarrera="plan-comun"
-      nombreRamo="Programación"
-      enlaceRamo="programacion"
-      Controles={controles}
-      Solemnes={solemnes}
-      Examenes={null}
-    />
-  )
+  if (!examenes)
+    return (
+      <Ramo
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Programación"
+        enlaceRamo="programacion"
+        Controles={controles}
+        Solemnes={solemnes}
+        Examenes={null}
+      />
+    );
 
-  if (!controles) return (
-    <Ramo
-      nombreCarrera="Plan común"
-      enlaceCarrera="plan-comun"
-      nombreRamo="Programación"
-      enlaceRamo="programacion"
-      Controles={null}
-      Solemnes={solemnes}
-      Examenes={examenes}
-    />
-  )
+  if (!controles)
+    return (
+      <Ramo
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Programación"
+        enlaceRamo="programacion"
+        Controles={null}
+        Solemnes={solemnes}
+        Examenes={examenes}
+      />
+    );
 
   return (
     <Ramo
@@ -76,5 +78,5 @@ export default function Programacion() {
       Solemnes={solemnes}
       Examenes={examenes}
     />
-  )
+  );
 }
