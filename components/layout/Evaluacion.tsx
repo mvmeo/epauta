@@ -25,7 +25,7 @@ export default function evaluacion(props: any) {
             evaluacion={props.tipoEvaluacion}
           />
 
-          <div className="grid grid-cols-3 gap-4 mt-4">
+          <div className="grid mx-4 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
             {Object.keys(props.Files || {}).map((key: any) => {
               return (
                 <>
