@@ -18,8 +18,8 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
  
     return (
       <Evaluacion
-        nombreCarrera="Plan común"
-        enlaceCarrera="plan-comun"
+        nombreCarrera="Ingeniería en obras civiles"
+        enlaceCarrera="eoc"
         nombreRamo="Probabilidad y estadística"
         enlaceRamo="proba"
         tipoEvaluacion="Solemnes"

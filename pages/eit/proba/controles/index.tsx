@@ -3,7 +3,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
   import axios from "axios";
   import React from "react";
   
-  const baseURL = "https://mvmeo.github.io/apipautas/carreras/plan-comun/c2/controles.json";
+  const baseURL = "https://mvmeo.github.io/apipautas/carreras/plan-comun/proba/controles.json";
   
   
   
@@ -18,10 +18,10 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
   
     return (
       <Evaluacion
-        nombreCarrera="Plan común"
-        enlaceCarrera="plan-comun"
-        nombreRamo="Cálculo 2"
-        enlaceRamo="c2"
+        nombreCarrera="Ingeniería informática"
+        enlaceCarrera="eit"
+        nombreRamo="Probabilidad y estadística"
+        enlaceRamo="proba"
         tipoEvaluacion="Controles"
         enlaceEvaluacion="controles"
         Files={Controles}

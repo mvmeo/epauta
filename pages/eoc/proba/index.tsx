@@ -3,13 +3,13 @@ import axios from "axios";
 import React from "react";
 
 const controlesURL =
-  "https://mvmeo.github.io/apipautas/carreras/plan-comun/mecanica/controles.json";
+  "https://mvmeo.github.io/apipautas/carreras/eit/proba/controles.json";
 const solemnesURL =
-  "https://mvmeo.github.io/apipautas/carreras/plan-comun/mecanica/solemnes.json";
+  "https://mvmeo.github.io/apipautas/carreras/eit/proba/solemnes.json";
 const examenesURL =
-  "https://mvmeo.github.io/apipautas/carreras/plan-comun/mecanica/examenes.json";
+  "https://mvmeo.github.io/apipautas/carreras/eit/proba/examenes.json";
 
-export default function Ayg() {
+export default function Probabilidad() {
   const [Controles, setControles] = React.useState(null);
   const [Solemnes, setSolemnes] = React.useState(null);
   const [Examenes, setExamenes] = React.useState(null);
@@ -35,10 +35,10 @@ export default function Ayg() {
   if (!Controles && !Solemnes && !Examenes)
     return (
       <Ramo
-        nombreCarrera="Plan común"
-        enlaceCarrera="plan-comun"
-        nombreRamo="Mecánica"
-        enlaceRamo="mecanica"
+        nombreCarrera="Obras civiles"
+        enlaceCarrera="eoc"
+        nombreRamo="Probabilidad y estadística"
+        enlaceRamo="proba"
         Controles={null}
         Solemnes={null}
         Examenes={null}
@@ -47,10 +47,10 @@ export default function Ayg() {
 
   return (
     <Ramo
-      nombreCarrera="Plan común"
-      enlaceCarrera="plan-comun"
-      nombreRamo="Mecánica"
-      enlaceRamo="mecanica"
+    nombreCarrera="Ingeniería obras civiles"
+    enlaceCarrera="eoc"
+      nombreRamo="Probabilidad y estadística"
+      enlaceRamo="proba"
       Controles={Controles}
       Solemnes={Solemnes}
       Examenes={Examenes}
