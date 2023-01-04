@@ -4,7 +4,7 @@ import axios from "axios";
 import React from "react";
 
 const baseURL =
-  "https://mvmeo.github.io/apipautas/carreras/plan-comun/proba/examenes.json";
+  "https://mvmeo.github.io/apipautas/carreras/eit/proba/examenes.json";
 
 export default function Examenes() {
   const [Examenes, setExamenes] = React.useState(null);

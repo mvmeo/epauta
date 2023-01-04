@@ -4,7 +4,7 @@ import axios from "axios";
 import React from "react";
 
 const baseURL =
-  "https://mvmeo.github.io/apipautas/carreras/plan-comun/proba/solemnes.json";
+  "https://mvmeo.github.io/apipautas/carreras/eit/proba/solemnes.json";
 
 export default function Solemnes() {
   const [Solemnes, setSolemnes] = React.useState(null);
