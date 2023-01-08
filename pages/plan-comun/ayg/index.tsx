@@ -38,7 +38,6 @@ export default function Ayg() {
         nombreCarrera="Plan común"
         enlaceCarrera="plan-comun"
         nombreRamo="Álgebra y geometría"
-        enlaceRamo="ayg"
         Controles={null}
         Solemnes={null}
         Examenes={null}
@@ -50,7 +49,6 @@ export default function Ayg() {
       nombreCarrera="Plan común"
       enlaceCarrera="plan-comun"
       nombreRamo="Álgebra y geometría"
-      enlaceRamo="ayg"
       Controles={Controles}
       Solemnes={Solemnes}
       Examenes={Examenes}

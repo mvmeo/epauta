@@ -27,7 +27,7 @@ export default function Ramo(props:any) {
       </Head>
       <main className="">
         <div className="container mx-auto">
-          <Breadcrumb carrera={props.nombreCarrera} enlaceCarrera={props.enlaceCarrera} ramo={props.nombreRamo} />
+          <Breadcrumb carrera={props.nombreCarrera} enlaceCarrera={props.enlaceCarrera} ramo={props.nombreRamo} enlaceRamo={props.enlaceRamo}/>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 mt-4">
             <FileBox Files={props.Controles} carrera={props.enlaceCarrera} ramo={props.enlaceRamo} evaluacion="controles" />
