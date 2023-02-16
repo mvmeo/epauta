@@ -9,7 +9,7 @@ const solemnesURL =
 const examenesURL =
   "https://mvmeo.github.io/apipautas/carreras/plan-comun/mecanica/examenes.json";
 
-export default function Ayg() {
+export default function Mecanica() {
   const [Controles, setControles] = React.useState(null);
   const [Solemnes, setSolemnes] = React.useState(null);
   const [Examenes, setExamenes] = React.useState(null);
@@ -32,7 +32,7 @@ export default function Ayg() {
     });
   }, []);
 
-  if (!Controles && !Solemnes && !Examenes)
+  if (!Controles)
     return (
       <Ramo
         nombreCarrera="Plan común"
@@ -40,7 +40,33 @@ export default function Ayg() {
         nombreRamo="Mecánica"
         enlaceRamo="mecanica"
         Controles={null}
+        Solemnes={Solemnes}
+        Examenes={Examenes}
+      />
+    );
+
+  if (!Solemnes)
+    return (
+      <Ramo
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Mecánica"
+        enlaceRamo="mecanica"
+        Controles={Controles}
         Solemnes={null}
+        Examenes={Examenes}
+      />
+    );
+
+  if (!Examenes)
+    return (
+      <Ramo
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Mecánica"
+        enlaceRamo="mecanica"
+        Controles={Controles}
+        Solemnes={Solemnes}
         Examenes={null}
       />
     );

@@ -16,16 +16,20 @@ export default function NotFound() {
       <main className="">
         <div className="bg-red-500 h-screen">
           <div className="mx-auto container">
-
             <div className="container mx-auto">
               <div className="flex justify-center pt-40">
-                <div className="text-white space-y-8 font-mono">
+                <div className="text-white space-y-8 font-mono text-center">
                   <div>
                     <h2 className="text-[100px] font-mono font-bold">404</h2>
-                    <h3 className="">Página no encontrada</h3>
+                    <h3 className="">
+                      Página no encontrada.
+                    </h3>
                   </div>
                   <div>
-                    <Link href="/" className="text-red-500 bg-white p-4 rounded">
+                    <Link
+                      href="/"
+                      className="text-red-500 bg-white p-4 rounded"
+                    >
                       Volver al inicio.
                     </Link>
                   </div>

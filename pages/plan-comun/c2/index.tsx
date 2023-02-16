@@ -9,7 +9,7 @@ const solemnesURL =
 const examenesURL =
   "https://mvmeo.github.io/apipautas/carreras/plan-comun/c2/examenes.json";
 
-export default function Ayg() {
+export default function CalculoDos() {
   const [Controles, setControles] = React.useState(null);
   const [Solemnes, setSolemnes] = React.useState(null);
   const [Examenes, setExamenes] = React.useState(null);
@@ -32,15 +32,41 @@ export default function Ayg() {
     });
   }, []);
 
-  if (!Controles && !Solemnes && !Examenes)
+  if (!Controles)
     return (
       <Ramo
         nombreCarrera="Plan común"
         enlaceCarrera="plan-comun"
-        nombreRamo="Cálculo 2"
+        nombreRamo="Cálculo II"
         enlaceRamo="c2"
         Controles={null}
+        Solemnes={Solemnes}
+        Examenes={Examenes}
+      />
+    );
+
+  if (!Solemnes)
+    return (
+      <Ramo
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Cálculo II"
+        enlaceRamo="c2"
+        Controles={Controles}
         Solemnes={null}
+        Examenes={Examenes}
+      />
+    );
+
+  if (!Examenes)
+    return (
+      <Ramo
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Cálculo II"
+        enlaceRamo="c2"
+        Controles={Controles}
+        Solemnes={Solemnes}
         Examenes={null}
       />
     );
@@ -49,7 +75,7 @@ export default function Ayg() {
     <Ramo
       nombreCarrera="Plan común"
       enlaceCarrera="plan-comun"
-      nombreRamo="Cálculo 2"
+      nombreRamo="Cálculo II"
       enlaceRamo="c2"
       Controles={Controles}
       Solemnes={Solemnes}
