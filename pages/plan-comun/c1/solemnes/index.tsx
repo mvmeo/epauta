@@ -20,7 +20,7 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
       <Evaluacion
         nombreCarrera="Plan común"
         enlaceCarrera="plan-comun"
-        nombreRamo="Cálculo 1"
+        nombreRamo="Cálculo I"
         enlaceRamo="c1"
         tipoEvaluacion="Solemnes"
         enlaceEvaluacion="solemnes"

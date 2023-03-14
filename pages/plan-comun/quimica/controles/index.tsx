@@ -16,7 +16,17 @@ import Evaluacion from "../../../../components/layout/Evaluacion";
       });
     }, []);
   
-    if (!Controles) return null;
+    if (!Controles) return (
+      <Evaluacion
+        nombreCarrera="Plan común"
+        enlaceCarrera="plan-comun"
+        nombreRamo="Química"
+        enlaceRamo="quimica"
+        tipoEvaluacion="Controles"
+        enlaceEvaluacion="controles"
+        Files={null}
+      />
+    );
   
     return (
       <Evaluacion
